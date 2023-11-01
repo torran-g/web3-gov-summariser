@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "web3-gov-summariser"
+version = "0.1.0"
+description = "Project for summarising the governance proposals of Web3 projects."
+authors = ["Torran Green <torrangreen@hotmail.co.uk>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.28.1"
+bs4 = "^0.0.1"
+requests = "^2.31.0"
+tabulate = "^0.9.0"
+pydantic = "^2.4.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+pre-commit = "^3.5.0"
+flake8 = "^6.1.0"
+ruff = "^0.1.3"
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
